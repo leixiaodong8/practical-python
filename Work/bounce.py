@@ -2,7 +2,7 @@
 #
 # Exercise 1.5
 
-# defining function so it works universaly with any number
+# defining function so it works universally with any number
 def bounce(x):
 
 	# defining initial list to be used in dict later
