@@ -2,6 +2,10 @@
 #
 # Exercise 1.27
 
+# importing sys to be able to read the script from the command line
+
+import sys
+
 def only_stocks(i): # function we will use later to return only floats and ints to the list
 	try: 
 		return int(i)
@@ -40,5 +44,12 @@ def stock_price(file): # making a funciton because the file may vary
 	# closing the file
 
 	file.close()
+
+	# enabling the code to be executed from the command line
+
+	if len(sys.argv) == 2:
+		file = sys.argv[1]
+
+
 
 stock_price("Data/portfolio.csv")
